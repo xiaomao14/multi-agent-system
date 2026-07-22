@@ -63,7 +63,7 @@
 
 ### 完整工作流程
 
-```
+`
 用户输入问题
     │
     ▼
@@ -110,7 +110,7 @@
                │ Final Article│
                │   (终稿)    │
                └─────────────┘
-```
+`
 
 ### 智能体职责表
 
@@ -136,9 +136,9 @@
 
 ### 安装依赖
 
-```powershell
+`powershell
 pip install -r requirements.txt
-```
+`
 
 ### 支持的 API 服务商
 
@@ -155,17 +155,17 @@ pip install -r requirements.txt
 
 ### 命令行模式
 
-```powershell
+`powershell
 python main.py
-```
+`
 
 ### Web 界面
 
-```powershell
+`powershell
 streamlit run app.py
-```
+`
 
-浏览器会自动打开 `http://localhost:8501`
+浏览器会自动打开 http://localhost:8501
 
 ---
 
@@ -173,7 +173,7 @@ streamlit run app.py
 
 ### .env 文件
 
-```env
+`env
 # === 必填配置 ===
 OPENAI_API_KEY=你的_api_key
 OPENAI_BASE_URL=https://open.bigmodel.cn/api/paas/v4
@@ -182,13 +182,13 @@ OPENAI_MODEL=glm-5.2
 # === 可选配置 ===
 DEBUG=false
 LOG_LEVEL=INFO
-```
+`
 
 ---
 
 ## 项目结构
 
-```
+`
 multi-agent-system/
 │
 ├── agents/                    # 智能体模块
@@ -225,7 +225,7 @@ multi-agent-system/
 ├── .gitignore                 # Git 忽略规则
 ├── USAGE.md                   # 使用手册
 └── README.md                  # 项目简介
-```
+`
 
 ---
 
@@ -236,9 +236,9 @@ multi-agent-system/
 **原因**: 依赖未正确安装
 
 **解决**:
-```powershell
+`powershell
 pip install -r requirements.txt --force-reinstall
-```
+`
 
 ### Q2: API 调用失败 / 超时
 
@@ -246,15 +246,15 @@ pip install -r requirements.txt --force-reinstall
 1. 检查 API Key 是否正确
 2. 确认 Base URL 配置正确
 3. 检查网络连接
-4. 查看日志文件：`logs\YYYYMMDD.log`
+4. 查看日志文件：logs\YYYYMMDD.log
 
 ### Q3: Streamlit 界面打不开
 
 **解决**:
-```powershell
+`powershell
 pip install streamlit
 streamlit run app.py --server.port 8502
-```
+`
 
 ### Q4: 生成的文章质量不高
 
